@@ -1,1 +1,174 @@
-Hellor World
+<!DOCTYPE html>
+<html>
+<head>
+<title>How Do Developers Customize Refactoring in Practice?</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('body').scrollspy({
+			target : '#mainNavBar'
+		})
+	});
+</script>
+
+</head>
+<body>
+
+	<nav id="mainNavBar" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ICSME 2020</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#abstract">Abstract <span
+							class="sr-only">(current)</span></a></li>
+
+					<li><a href="#downloads">Downloads</a></li>
+					<!--<li><a href="#references">References</a></li>-->
+
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container container-gral">
+
+		<div class="page-title">
+			<h1>
+				How Do Developers Customize Refactoring in Practice? <br>
+			</h1>
+		</div>
+		<br>
+		<p class="text-justify">
+			This website contains complementary data to the
+			<!--submitted-->
+			paper.
+		</p>
+
+		<h3 id="abstract" class="page-header">Abstract</h3>
+		<p class="text-justify">Background: Refactoring is a common software development practice. Each refactoring type (e.g. an Extract Method or a Move Method) is composed of a core set of code modifications that aim at improving the code structure. However, developers often have to customize such refactorings by including other modifications or discarding core ones to tailor them to their program's needs. These refactorings are called customized refactorings. Unfortunately, there is a lack of empirical evidence on how developers customize typical types of refactoring in their projects. This knowledge gap may misinform practitioners and tool designers, and may even cause a misalignment between the tooling support and the application of refactorings in practice. Thus, our retrospective study investigates how developers customize four common types of refactorings in practice. We analyzed what code modifications developers perform along with which refactoring customizations. We conducted an in-depth analysis of 1,162 refactoring instances performed in 13 software projects. Our results reveal that developers often apply recurring modifications in their customized refactorings that are not covered by Fowler's mechanics (e.g., 80.77% of the instances of Move Method). To make matters worse, several frequent customizations are not fully supported by a popular refactoring tool.  Finally, our study also provides recurring customized refactorings that can help: (i) to better understand the refactoring customization needs, and (ii) to further improve tooling support for customized refactoring.</p>
+
+		<div>Attention-1: Some browsers may automatically convert the .csv files to .xls when downloading the data. You should convert back to correctly work.</div>
+		<div>Attention-2: Some modifications may have a different name in the data. Such as: Function -> Method, Creation -> Declaration</div>
+		<h3 id="downloads" class="page-header">Downloads</h3>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Artifact</th>
+					<th>Description</th>
+				</tr>
+
+				<!-- Instancias -->
+				<tr>
+					<th scope="row">1</th>
+					<td><a href="download/EM-instances.csv"
+						target="_blank">EM instances.csv</a></td>
+					<td>This file contains the instances of Extract Method.
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td><a href="download/IM-instances.csv"
+						target="_blank">IM instances.csv</a></td>
+					<td>This file contains the instances of Inline Method.
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td><a href="download/MM-instances.csv"
+						target="_blank">MM instances.csv</a></td>
+					<td>This file contains the instances of Move Method.
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td><a href="download/PUM-instances.csv"
+						target="_blank">PUM instances.csv</a></td>
+					<td>This file contains the instances of Pull Up Method.
+				</tr>
+
+				<!-- Modifications -->
+
+				<tr>
+					<th scope="row">5</th>
+					<td><a href="download/EM-modifications.txt"
+						target="_blank">EM modifications.txt</a></td>
+					<td>This file contains the code modifications detected during Extract Method Application.
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td><a href="download/IM-modifications.txt"
+						target="_blank">IM modifications.txt</a></td>
+					<td>This file contains the code modifications detected during Inline Method Application.
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td><a href="download/MM-modifications.txt"
+						target="_blank">MM modifications.txt</a></td>
+					<td>This file contains the code modifications detected during Move Method Application.
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td><a href="download/PUM-modifications.txt" 
+						target="_blank">PUM modifications.txt</a></td>
+					<td>This file contains the code modifications detected during Pull Up Method Application.
+				</tr>
+
+				<!--Padrões  -->
+
+				<tr>
+					<th scope="row">9</th>
+					<td><a href="download/EM-patterns.csv" type="text/csv"
+						target="_blank">EM patterns.csv</a></td>
+					<td>This file contains the patterns of Extract Method.
+				</tr>
+				<tr>
+					<th scope="row">10</th>
+					<td><a href="download/IM-patterns.csv"
+						target="_blank">IM patterns.csv</a></td>
+					<td>This file contains the patterns of Inline Method.
+				</tr>
+				<tr>
+					<th scope="row">11</th>
+					<td><a href="download/MM-patterns.csv"
+						target="_blank">MM patterns.csv</a></td>
+					<td>This file contains the patterns of Move Method.
+				</tr>
+				<tr>
+					<th scope="row">12</th>
+					<td><a href="download/PUM-patterns.csv"
+						target="_blank">PUM patterns.csv</a></td>
+					<td>This file contains the patterns of Pull Up Method.
+				</tr>
+
+
+			</thead>
+			<tbody>
+
+			
+
+			</tbody>
+		</table>
+
+</body>
+</html>
+
