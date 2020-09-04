@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>How Do Developers Customize Refactoring in Practice?</title>
+<title>On the Misalignment between Theory and Practice: A Study of Refactoring Customizations</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -56,7 +56,7 @@
 
 		<div class="page-title">
 			<h1>
-				How Do Developers Customize Refactoring in Practice? <br>
+				On the Misalignment between Theory and Practice: A Study of Refactoring Customizations <br>
 			</h1>
 		</div>
 		<br>
@@ -67,7 +67,7 @@
 		</p>
 
 		<h3 id="abstract" class="page-header">Abstract</h3>
-		<p class="text-justify">Background: Refactoring is a common software development practice. Each refactoring type (e.g. an Extract Method or a Move Method) is composed of a core set of code modifications that aim at improving the code structure. However, developers often have to customize such refactorings by including other modifications or discarding core ones to tailor them to their program's needs. These refactorings are called customized refactorings. Unfortunately, there is a lack of empirical evidence on how developers customize typical types of refactoring in their projects. This knowledge gap may misinform practitioners and tool designers, and may even cause a misalignment between the tooling support and the application of refactorings in practice. Thus, our retrospective study investigates how developers customize four common types of refactorings in practice. We analyzed what code modifications developers perform along with which refactoring customizations. We conducted an in-depth analysis of 1,162 refactoring instances performed in 13 software projects. Our results reveal that developers often apply recurring modifications in their customized refactorings that are not covered by Fowler's mechanics (e.g., 80.77% of the instances of Move Method). To make matters worse, several frequent customizations are not fully supported by a popular refactoring tool.  Finally, our study also provides recurring customized refactorings that can help: (i) to better understand the refactoring customization needs, and (ii) to further improve tooling support for customized refactoring.</p>
+		<p class="text-justify">Background:  Refactoring is a common software development practice. There are books defining standard mechanics of popular refactoring types, such as Extract Method and Move Method. There is also a number of IDEs with different implementations for those common refactoring types. It is unclear whether (i) developers in practice follow standard mechanics presented in refactoring books, and (ii) IDEs offer proper tooling support for refactorings performed in practice. In this work, we used a refactoring detection tool to study 1,162 refactoring instances in 13 real software projects. Our results reveal that developers often apply recurring additional modifications besides the standard ones in their refactorings. These refactorings are called customized refactorings. Customized refactorings contain additional modifications not covered by the most popular refactoring book. For instance, we found this is the case of 80.77% of the Move Method instances observed in software projects. We also study the refactoring implementations of popular IDEs. We observed that, in practice, several customizations frequently applied by developers are not fully supported by these IDEs. In order to understand the relevance of these customizations, we conducted a survey in which we asked 41 developers about the most frequent customizations we found. Developers confirm they apply those customized refactorings in practice and wish proper tool support to perform the additional modifications comprising a customization. This may be one of the key reasons why developers do not use tools to apply refactorings very often. Moreover, refactoring guidelines in books may also need to be updated to reflect typical refactoring customizationss. These updated guidelines may help in turn IDE developers to improve refactoring support for developers while applying their customizations. Our study presents customization patterns applied by developers in practice that are a starting point to help book writer and tool developers.</p>
 
 		<div>Attention-1: Some browsers may automatically convert the .csv files to .xls when downloading the data. You should convert back to correctly work.</div>
 		<div>Attention-2: Some modifications may have a different name in the data. Such as: Function -> Method, Creation -> Declaration</div>
