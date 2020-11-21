@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>On the Misalignment between Theory and Practice: A Study of Refactoring Customizations</title>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('body').scrollspy({
-			target : '#mainNavBar'
-		})
-	});
-</script>
+<head>
+	<title>On the Misalignment between Theory and Practice: A Study of Refactoring Customizations</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('body').scrollspy({
+				target: '#mainNavBar'
+			})
+		});
+	</script>
 
 </head>
+
 <body>
 
 	<nav id="mainNavBar" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-					aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">ICSE 2021</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#abstract">Abstract <span
-							class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#abstract">Abstract <span class="sr-only">(current)</span></a></li>
 
+					<li><a href="#projectlist">Project List</a></li>
+					<li><a href="#applicability">Applicability</a></li>
 					<li><a href="#downloads">Downloads</a></li>
+					
 					<!--<li><a href="#references">References</a></li>-->
 
 				</ul>
@@ -67,11 +68,70 @@
 		</p>
 
 		<h3 id="abstract" class="page-header">Abstract</h3>
-		<p class="text-justify">Background:  Refactoring is a common software development practice. There are books defining standard mechanics of popular refactoring types, such as Extract Method and Move Method. There is also a number of IDEs with different implementations for those common refactoring types. It is unclear whether (i) developers in practice follow standard mechanics presented in refactoring books, and (ii) IDEs offer proper tooling support for refactorings performed in practice. In this work, we used a refactoring detection tool to study 1,162 refactoring instances in 13 real software projects. Our results reveal that developers often apply recurring additional modifications besides the standard ones in their refactorings. These refactorings are called customized refactorings. Customized refactorings contain additional modifications not covered by the most popular refactoring book. For instance, we found this is the case of 80.77% of the Move Method instances observed in software projects. We also study the refactoring implementations of popular IDEs. We observed that, in practice, several customizations frequently applied by developers are not fully supported by these IDEs. In order to understand the relevance of these customizations, we conducted a survey in which we asked 41 developers about the most frequent customizations we found. Developers confirm they apply those customized refactorings in practice and wish proper tool support to perform the additional modifications comprising a customization. This may be one of the key reasons why developers do not use tools to apply refactorings very often. Moreover, refactoring guidelines in books may also need to be updated to reflect typical refactoring customizationss. These updated guidelines may help in turn IDE developers to improve refactoring support for developers while applying their customizations. Our study presents customization patterns applied by developers in practice that are a starting point to help book writer and tool developers.</p>
+		<p class="text-justify">Background: Refactoring is a common software development practice. There are books
+			defining standard mechanics of popular refactoring types, such as Extract Method and Move Method. There is
+			also a number of IDEs with different implementations for those common refactoring types. It is unclear
+			whether (i) developers in practice follow standard mechanics presented in refactoring books, and (ii) IDEs
+			offer proper tooling support for refactorings performed in practice. In this work, we used a refactoring
+			detection tool to study 1,162 refactoring instances in 13 real software projects. Our results reveal that
+			developers often apply recurring additional modifications besides the standard ones in their refactorings.
+			These refactorings are called customized refactorings. Customized refactorings contain additional
+			modifications not covered by the most popular refactoring book. For instance, we found this is the case of
+			80.77% of the Move Method instances observed in software projects. We also study the refactoring
+			implementations of popular IDEs. We observed that, in practice, several customizations frequently applied by
+			developers are not fully supported by these IDEs. In order to understand the relevance of these
+			customizations, we conducted a survey in which we asked 41 developers about the most frequent customizations
+			we found. Developers confirm they apply those customized refactorings in practice and wish proper tool
+			support to perform the additional modifications comprising a customization. This may be one of the key
+			reasons why developers do not use tools to apply refactorings very often. Moreover, refactoring guidelines
+			in books may also need to be updated to reflect typical refactoring customizationss. These updated
+			guidelines may help in turn IDE developers to improve refactoring support for developers while applying
+			their customizations. Our study presents customization patterns applied by developers in practice that are a
+			starting point to help book writer and tool developers.</p>
 
-		<div>Attention-1: Some browsers may automatically convert the .csv files to .xls when downloading the data. You should convert back to correctly work.</div>
-		<div>Attention-2: Some modifications may have a different name in the data. Such as: Function -> Method, Creation -> Declaration</div>
+
+		<h3 id="projectlist" class="page-header">Project List</h3>
+		1-Elastic/Elasticsearch hadoop<br>
+		2-Netflix Hystrix<br>
+		3-Facebook Fresco<br>
+		4-Doanduyhai Achilles<br>
+		5-IkasanEIP Ikasan<br>
+		6-Google ExoPlayer<br>
+		7-WhisperSystems Signal-Android<br>
+		8-Netty<br>
+		9-Mikepenz/Material Drawer<br>
+		10-Apache Derby<br>
+		11-Apache Tomcat<br>
+		12-Brettwooldridge HikariCP<br>
+		13-Afollestad/Material-dialogs<br><br>
+
+		<h3 id="applicability" class="page-header">Applicability</h3>
+
+		<div class="text-justify">
+			Our study complements previous studies[8][14] and helps the development of refactoring tools well 
+			aligned with refactorings in practice. Tool developers can use these catalogs to create flexible tools, 
+			allowing developers to apply the patterns as a configuration of the tool or through recommendations. 
+			For instance, the following image illustrates an additional configuration for Netbeans. 
+			This new configuration should allow developers to handle the client methods that will be 
+			affected by the refactoring, especially, to handle the modification *Method Access* that 
+			composes the most frequent patterns. In this way, developers should be able to decide how each client method should be affected.
+		</div>
+		<img src="images/config.png" alt="" style="margin-top: 18px; margin-bottom: 18px;">
+
+		<div>For more complex patterns, composed of several modifications, 
+			refactoring tools should allow developers to create their own 
+			customization in a step-wise way, adding or removing code modifications 
+			that compose each refactoring. Finally, these tools could also recommend 
+			customized refactorings for each developer.
+		</div>
+
+
+
 		<h3 id="downloads" class="page-header">Downloads</h3>
+		<div>Attention-1: Some browsers may automatically convert the .csv files to .xls when downloading the data. You
+			should convert back to correctly work.</div>
+		<div>Attention-2: Some modifications may have a different name in the data. Such as: Function -> Method,
+			Creation -> Declaration</div>
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -83,26 +143,22 @@
 				<!-- Instancias -->
 				<tr>
 					<th scope="row">1</th>
-					<td><a href="download/EM-instances.csv"
-						target="_blank">EM instances.csv</a></td>
+					<td><a href="download/EM-instances.csv" target="_blank">EM instances.csv</a></td>
 					<td>This file contains the instances of Extract Method.
 				</tr>
 				<tr>
 					<th scope="row">2</th>
-					<td><a href="download/IM-instances.csv"
-						target="_blank">IM instances.csv</a></td>
+					<td><a href="download/IM-instances.csv" target="_blank">IM instances.csv</a></td>
 					<td>This file contains the instances of Inline Method.
 				</tr>
 				<tr>
 					<th scope="row">3</th>
-					<td><a href="download/MM-instances.csv"
-						target="_blank">MM instances.csv</a></td>
+					<td><a href="download/MM-instances.csv" target="_blank">MM instances.csv</a></td>
 					<td>This file contains the instances of Move Method.
 				</tr>
 				<tr>
 					<th scope="row">4</th>
-					<td><a href="download/PUM-instances.csv"
-						target="_blank">PUM instances.csv</a></td>
+					<td><a href="download/PUM-instances.csv" target="_blank">PUM instances.csv</a></td>
 					<td>This file contains the instances of Pull Up Method.
 				</tr>
 
@@ -110,26 +166,22 @@
 
 				<tr>
 					<th scope="row">5</th>
-					<td><a href="download/EM-modifications.txt"
-						target="_blank">EM modifications.txt</a></td>
+					<td><a href="download/EM-modifications.txt" target="_blank">EM modifications.txt</a></td>
 					<td>This file contains the code modifications detected during Extract Method Application.
 				</tr>
 				<tr>
 					<th scope="row">6</th>
-					<td><a href="download/IM-modifications.txt"
-						target="_blank">IM modifications.txt</a></td>
+					<td><a href="download/IM-modifications.txt" target="_blank">IM modifications.txt</a></td>
 					<td>This file contains the code modifications detected during Inline Method Application.
 				</tr>
 				<tr>
 					<th scope="row">7</th>
-					<td><a href="download/MM-modifications.txt"
-						target="_blank">MM modifications.txt</a></td>
+					<td><a href="download/MM-modifications.txt" target="_blank">MM modifications.txt</a></td>
 					<td>This file contains the code modifications detected during Move Method Application.
 				</tr>
 				<tr>
 					<th scope="row">8</th>
-					<td><a href="download/PUM-modifications.txt" 
-						target="_blank">PUM modifications.txt</a></td>
+					<td><a href="download/PUM-modifications.txt" target="_blank">PUM modifications.txt</a></td>
 					<td>This file contains the code modifications detected during Pull Up Method Application.
 				</tr>
 
@@ -137,33 +189,28 @@
 
 				<tr>
 					<th scope="row">9</th>
-					<td><a href="download/EM-patterns.csv" type="text/csv"
-						target="_blank">EM patterns.csv</a></td>
+					<td><a href="download/EM-patterns.csv" type="text/csv" target="_blank">EM patterns.csv</a></td>
 					<td>This file contains the patterns of Extract Method.
 				</tr>
 				<tr>
 					<th scope="row">10</th>
-					<td><a href="download/IM-patterns.csv"
-						target="_blank">IM patterns.csv</a></td>
+					<td><a href="download/IM-patterns.csv" target="_blank">IM patterns.csv</a></td>
 					<td>This file contains the patterns of Inline Method.
 				</tr>
 				<tr>
 					<th scope="row">11</th>
-					<td><a href="download/MM-patterns.csv"
-						target="_blank">MM patterns.csv</a></td>
+					<td><a href="download/MM-patterns.csv" target="_blank">MM patterns.csv</a></td>
 					<td>This file contains the patterns of Move Method.
 				</tr>
 				<tr>
 					<th scope="row">12</th>
-					<td><a href="download/PUM-patterns.csv"
-						target="_blank">PUM patterns.csv</a></td>
+					<td><a href="download/PUM-patterns.csv" target="_blank">PUM patterns.csv</a></td>
 					<td>This file contains the patterns of Pull Up Method.
 				</tr>
-				
+
 				<tr>
 					<th scope="row">13</th>
-					<td><a href="download/Survey.csv"
-						target="_blank">Survey.csv</a></td>
+					<td><a href="download/Survey.csv" target="_blank">Survey.csv</a></td>
 					<td>This file contains the survey questions and answers.
 				</tr>
 
@@ -171,11 +218,11 @@
 			</thead>
 			<tbody>
 
-			
+
 
 			</tbody>
 		</table>
 
 </body>
-</html>
 
+</html>
